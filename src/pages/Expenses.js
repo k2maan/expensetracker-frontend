@@ -31,7 +31,7 @@ const Expenses = () => {
   useEffect(() => {
     const fetchExpenses = async () => {
       try {
-        const response = await fetch("http://localhost:8000/expenses", {
+        const response = await fetch("https://expensetracker-backend-0b1i.onrender.com/expenses", {
           method: "GET",
           mode: "cors",
           headers: {
@@ -61,7 +61,7 @@ const Expenses = () => {
     event.preventDefault();
     const data = expense;
     try {
-      const response = await fetch("http://localhost:8000/addexpense", {
+      const response = await fetch("https://expensetracker-backend-0b1i.onrender.com/addexpense", {
         method: "POST",
         mode: "cors",
         headers: {

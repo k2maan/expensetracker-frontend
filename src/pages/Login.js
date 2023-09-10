@@ -25,7 +25,7 @@ const Login = ({ setIsLoggedin }) => {
     },
     validationSchema: validationSchema,
     onSubmit: async (values) => {
-      const response = await fetch("http://localhost:8000/login", {
+      const response = await fetch("https://expensetracker-backend-0b1i.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -52,7 +52,7 @@ const Login = ({ setIsLoggedin }) => {
 
   const handleGoogleLogin = async (response) => {
     const tokenId = response.tokenId;
-    const res = await fetch("http://localhost:8000/login", {
+    const res = await fetch("https://expensetracker-backend-0b1i.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

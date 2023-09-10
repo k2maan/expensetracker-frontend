@@ -21,7 +21,7 @@ function App() {
     useEffect(() => {
       const fetchUserDetails = async () => {
         try {
-          const response = await fetch("http://localhost:8000/getuser", {
+          const response = await fetch("https://expensetracker-backend-0b1i.onrender.com/getuser", {
             method: "POST",
             mode: "cors",
             headers: {

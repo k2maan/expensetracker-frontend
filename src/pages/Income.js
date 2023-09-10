@@ -32,7 +32,7 @@ const Income = () => {
   useEffect(() => {
     const fetchIncome = async () => {
       try {
-        const response = await fetch("http://localhost:8000/income", {
+        const response = await fetch("https://expensetracker-backend-0b1i.onrender.com/income", {
           method: "GET",
           mode: "cors",
           headers: {
@@ -58,7 +58,7 @@ const Income = () => {
     const data = income;
 
     try {
-      const response = await fetch("http://localhost:8000/addincome", {
+      const response = await fetch("https://expensetracker-backend-0b1i.onrender.com/addincome", {
         method: "POST",
         mode: "cors",
         headers: {

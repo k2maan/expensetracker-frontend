@@ -46,7 +46,7 @@ const Register = ({ setIsLoggedin }) => {
     onSubmit: async (values) => {
       const { name, email, password, cpassword } = credentials;
       if (password === cpassword) {
-        const response = await fetch("http://localhost:8000/register", {
+        const response = await fetch("https://expensetracker-backend-0b1i.onrender.com/register", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
